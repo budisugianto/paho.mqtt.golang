@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"os"
 
-	MQTT "github.com/eclipse/paho.mqtt.golang"
+	MQTT "github.com/budisugianto/paho.mqtt.golang"
 )
 
 /*
@@ -36,6 +36,8 @@ Options:
  [-broker <uri>]              Broker URI
  [-topic <topic>]             Topic
  [-store <path>]              Store Directory
+
+*/rectory
 
 */
 

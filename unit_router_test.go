@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/eclipse/paho.mqtt.golang/packets"
+	"github.com/budisugianto/paho.mqtt.golang/packets"
 )
 
 func Test_newRouter(t *testing.T) {

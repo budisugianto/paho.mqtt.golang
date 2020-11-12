@@ -21,13 +21,14 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"io"
 	"net"
 	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
 
-	"github.com/eclipse/paho.mqtt.golang/packets"
+	"github.com/budisugianto/paho.mqtt.golang/packets"
 )
 
 const (
@@ -552,7 +553,7 @@ func (c *client) startCommsWorkers(conn net.Conn, inboundFromStore <-chan packet
 				}
 				incomingPubChan <- pub
 			case err, ok := <-commsErrors:
-				if !ok {
+				if !ok || err == io.EOF {
 					commsErrors = nil
 					continue
 				}

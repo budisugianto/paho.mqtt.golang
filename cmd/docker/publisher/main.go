@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	mqtt "github.com/eclipse/paho.mqtt.golang"
+	mqtt "github.com/budisugianto/paho.mqtt.golang"
 )
 
 // Connect to the broker and publish a message periodically

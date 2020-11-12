@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	mqtt "github.com/eclipse/paho.mqtt.golang"
+	mqtt "github.com/budisugianto/paho.mqtt.golang"
 )
 
 const (
